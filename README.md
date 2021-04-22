@@ -1,3 +1,3 @@
 # i18n in React with react-intl
 
-This is a starter project...
+## [Click to see Project Live](https://ibaslogic.github.io/i18n_react_intl_project/)
