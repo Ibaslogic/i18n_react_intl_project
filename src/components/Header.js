@@ -1,16 +1,17 @@
 import { FormattedMessage } from "react-intl";
 import { LOCALES } from "../i18n/locales";
-import logo from "../images/LogRocket_logo.png";
 
 const Header = (props) => {
   const menu = [
     {
-      title: "customers",
-      path: "https://logrocket.com/customers/",
+      key: "about_project",
+      title: "About the project",
+      path: "#",
     },
     {
-      title: "pricing",
-      path: "https://logrocket.com/pricing/",
+      key: "contact_us",
+      title: "Contact us",
+      path: "#",
     },
   ];
 
@@ -25,17 +26,13 @@ const Header = (props) => {
   return (
     <header>
       <div className="container header_content">
-        <div className="brand">
-          <a href="https://logrocket.com/" target="_blank" rel="noreferrer">
-            <img src={logo} alt="" />
-          </a>
-        </div>
+        <div className="brand">ReactIntl</div>
         <nav>
           <ul>
-            {menu.map(({ title, path }) => (
+            {menu.map(({ title, path, key }) => (
               <li key={title}>
-                <a target="_blank" rel="noreferrer" href={path}>
-                  <FormattedMessage id={title} />
+                <a href={path}>
+                  <FormattedMessage id={key} />
                 </a>
               </li>
             ))}
@@ -44,7 +41,7 @@ const Header = (props) => {
         <div className="spacer"></div>
         <div className="switcher">
           {/* Language switch dropdown here */}
-          Locale{" "}
+          <FormattedMessage id="languages" />{" "}
           <select onChange={props.handleChange} value={props.currentLocale}>
             {languages.map(({ name, code }) => (
               <option key={code} value={code}>

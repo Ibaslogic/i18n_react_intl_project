@@ -42,15 +42,11 @@ header {
   width: 100%;
 }
 
-.brand a {
-  display: inline-block;
-  margin-top: 6px;
-}
-
-.brand img {
-  max-width: 10rem;
-  margin-right: 20px;
-  padding: 12px 0;
+.brand {
+  font-size: 30px;
+  line-height: 58px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 nav ul {
@@ -76,7 +72,6 @@ nav ul li a {
 
 .hero h1 {
   font-size: 45px;
-  color: #202473;
   line-height: 58px;
   margin-bottom: 15px;
 }
@@ -89,8 +84,6 @@ nav ul li a {
 .mt {
   margin-top: 20px;
 }
-
-/* Switcher */
 
 .switcher select {
   width: 99px;
