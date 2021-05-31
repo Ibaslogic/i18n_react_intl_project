@@ -43,7 +43,7 @@ export const messages = {
     about_project: "Über das Projekt",
     contact_us: "Kontaktiere uns",
     click_count:
-      "Sie haben geklickt {count, plural, one {# Mal} other {# Mal}}",
+      "Sie haben {count, plural, one {# Mal} other {# Mal}} geklickt",
     click_button: "Bitte klicken Sie auf die Schaltfläche unten",
     click_here: "Klicke hier",
     languages: "Sprachen",
@@ -58,7 +58,7 @@ export const messages = {
     // menu
     about_project: "プロジェクトについて",
     contact_us: "お問い合わせ",
-    click_count: "クリックしました {count, plural, one {# 回} other {# 回}}",
+    click_count: "{count, plural, one {# 回} other {# 回}}クリックしました",
     click_button: "下のボタンをクリックしてください",
     click_here: "ここをクリック",
     languages: "言語",
